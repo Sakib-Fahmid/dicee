@@ -13,13 +13,13 @@
 
     <ImageView
         android:id="@+id/image_logo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/image_leftDice"
-        app:layout_constraintEnd_toStartOf="@+id/guideline_rigtOfLogo"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="@+id/guideline_leftOfLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_rightDice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/dicee_logo" />
@@ -29,14 +29,10 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/image_rightDice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/image_rightDice"
         app:srcCompat="@drawable/dice2" />
 
     <ImageView
@@ -44,47 +40,28 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/image_leftDice"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_leftDice"
         app:srcCompat="@drawable/dice1" />
 
     <Button
         android:id="@+id/rollButton"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
         android:contentDescription="@string/Description_button"
         android:shadowColor="@color/black"
-
         android:text="@string/roll_button_text"
         android:textColor="@color/black"
         app:backgroundTint="@color/edeshTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_rigtOfLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent=".865" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_leftOfLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent=".13" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

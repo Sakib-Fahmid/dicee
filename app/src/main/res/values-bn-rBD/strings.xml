@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">dice</string>
+    <string name="button_text">"রোল করুন "</string>
+    <string name="roll_button_text">"রোল করুন "</string>
+    <string name="Description_button">ছক্কাগুলোকে রোল করা হয়</string>
+</resources>

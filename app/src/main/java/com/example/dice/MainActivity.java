@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         Button rollButton ;
         rollButton=(Button)findViewById(R.id.rollButton);
 
-        final ImageView leftDice=(ImageView)findViewById(R.id.imageLeftDice);
-        final ImageView rightDice=(ImageView)findViewById(R.id.imageRightDice);
+        final ImageView leftDice=(ImageView)findViewById(R.id.image_leftDice);
+        final ImageView rightDice=(ImageView)findViewById(R.id.image_rightDice);
 
         final int[] diceArray = {R.drawable.dice1,
                 R.drawable.dice2,
